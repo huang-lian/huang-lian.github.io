@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>黄炼</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-09-19T05:10:16.605Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>黄炼</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Propositional Caluclus</title>
+    <link href="http://yoursite.com/2018/09/19/Propositional-Caluclus/"/>
+    <id>http://yoursite.com/2018/09/19/Propositional-Caluclus/</id>
+    <published>2018-09-19T05:09:19.000Z</published>
+    <updated>2018-09-19T05:10:16.605Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Tag:note&lt;/p&gt;
+&lt;p&gt;Date:2018年9月18日22:52:03&lt;/p&gt;
+&lt;p&gt;Title:第三章 命题演算形式系统（Propositional Calculus）&lt;/p&gt;
+&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;h1 id=&quot;命题逻辑演算形式系统&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2018/09/19/hello-world/"/>
+    <id>http://yoursite.com/2018/09/19/hello-world/</id>
+    <published>2018-09-19T04:08:25.081Z</published>
+    <updated>2018-09-19T04:08:25.081Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
