@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://huang-lian.github.io./"/>
-  <updated>2018-09-19T06:01:23.086Z</updated>
+  <updated>2018-09-19T08:34:33.406Z</updated>
   <id>https://huang-lian.github.io./</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Hello World</title>
+    <link href="https://huang-lian.github.io./2018/09/19/hello-world/"/>
+    <id>https://huang-lian.github.io./2018/09/19/hello-world/</id>
+    <published>2018-09-19T08:34:33.406Z</published>
+    <updated>2018-09-19T08:34:33.406Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>命题演算形式系统</title>
     <link href="https://huang-lian.github.io./2018/09/19/%E5%91%BD%E9%A2%98%E6%BC%94%E7%AE%97%E5%BD%A2%E5%BC%8F%E7%B3%BB%E7%BB%9F/"/>
     <id>https://huang-lian.github.io./2018/09/19/命题演算形式系统/</id>
     <published>2018-09-19T05:58:45.000Z</published>
-    <updated>2018-09-19T06:01:23.086Z</updated>
+    <updated>2018-09-19T07:30:52.280Z</updated>
     
     <summary type="html">
     
@@ -34,28 +56,6 @@
 &lt;p&gt;Title:第三章 命题演算形式系统（Propositional Calculus）&lt;/p&gt;
 &lt;p&gt;[TOC]&lt;/p&gt;
 &lt;h1 id=&quot;命题逻辑演算形式系统&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://huang-lian.github.io./2018/09/19/hello-world/"/>
-    <id>https://huang-lian.github.io./2018/09/19/hello-world/</id>
-    <published>2018-09-19T04:08:25.081Z</published>
-    <updated>2018-09-19T04:08:25.081Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
         
       
     
