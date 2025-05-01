@@ -1,264 +1,1687 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    
-    <meta name="theme-color" content="#33363b">
-    <meta name="msapplication-TileColor" content="#33363b">
-    
-    
-    
-    <meta name="keywords" content="Life, ARIA, Hexo">
-    
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
-    
-    
-    <link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-chrome-192x192.png">
-    
-    
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
-    
-    
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
-    
-    
-    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#33363b">
-    
-    
-    <link rel="manifest" href="/favicons/site.webmanifest">
-    
-    
-    <meta name="msapplication-config" content="/favicons/browserconfig.xml">
-    
-    
-    <link rel="alternate" href="/atom.xml" title="临江倚岸" type="application/atom+xml" />
-    
-    
-    <link rel="shortcut icon" type="image/x-icon" href="/favicons/favicon.ico">
-    
-    
-    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="/css/index.css">
-    
-    <link rel="stylesheet" type="text/css" href="/css/sidebar.css">
-    
-    
-<link rel="stylesheet" type="text/css" href="/css/page.css">
-<link rel="stylesheet" type="text/css" href="/css/post.css">
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>期中成绩查询</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: sans-serif; padding: 1em; background: #f5f5f5; }
+    .card { background: #fff; border-radius: 10px; padding: 1em; max-width: 500px; margin: auto; box-shadow: 0 0 8px rgba(0,0,0,0.1); }
+    table { width: 100%; border-collapse: collapse; margin-top: 1em; }
+    th, td { border: 1px solid #ccc; padding: 0.5em; text-align: center; }
+    input { padding: 0.5em; width: 100%; margin-bottom: 1em; box-sizing: border-box; }
+    button { padding: 0.5em 1em; }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
 
-    <link rel="stylesheet" type="text/css" href="/css/custom.css">
-    <link rel="stylesheet" type="text/css" href="/css/atom-one-dark.css">
-    <link rel="stylesheet" type="text/css" href="/css/lightgallery.min.css">
-    <script type="text/javascript" src="/js/jquery.min.js"></script>
-    <script defer type="text/javascript" src="/js/util.js"></script>
-    <script defer type="text/javascript" src="/js/scrollspy.js"></script>
-    <script defer type="text/javascript" src="/js/fontawesome-all.min.js"></script>
-    <script defer type="text/javascript" src="/js/lightgallery.min.js"></script>
-    <script defer type="text/javascript" src="/js/lg-fullscreen.min.js"></script>
-    <script defer type="text/javascript" src="/js/lg-hash.min.js"></script>
-    <script defer type="text/javascript" src="/js/lg-pager.min.js"></script>
-    <script defer type="text/javascript" src="/js/lg-thumbnail.min.js"></script>
-    <script defer type="text/javascript" src="/js/lg-zoom.min.js"></script>
-    
-    
-    <script defer type="text/javascript" src="/js/search.js"></script>
-    <script type="text/javascript">
-    $(document).ready(function () {
-      var searchPath = "search.xml";
-      if (searchPath.length === 0) {
-        searchPath = "search.xml";
-      }
-      var path = "/" + searchPath;
-      searchFunc(path, "search-input", "search-result");
-    });
-    </script>
-    
-    
-    
-    <script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-    <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-      tex2jax: {
-        inlineMath: [ ["$","$"], ["\\(","\\)"]  ],
-        processEscapes: true,
-        skipTags: ["script", "noscript", "style", "textarea", "pre", "code"]
-      }
-    });
-    </script>
-    <script type="text/x-mathjax-config">
-    MathJax.Hub.Queue(function() {
-      var all = MathJax.Hub.getAllJax(), i;
-      for (i=0; i < all.length; i += 1) {
-        all[i].SourceElement().parentNode.className += " has-jax";
-      }
-    });
-    </script>
-    
-    
-    <script defer type="text/javascript" src="/js/index.js"></script>
-    
-    <script defer type="text/javascript" src="/js/custom.js"></script>
-    <title>临江倚岸 - 只是个念想</title>
-  </head>
-  <body itemscope itemtype="http://schema.org/WebPage" lang="zh_CN"  data-spy="scroll" data-target=".list-group">
-    
-<header id="header" class="header" style="background: #33363b;">
-  <div class="container">
-    <div class="header-container">
-      <div class="header-title">
-        <h1 class="title"><a href="/">临江倚岸</a></h1>
-        <h2 class="subtitle">只是个念想</h2>
-      </div>
-      
-      <div class="logo">
-        <img src="/images/logo.png" alt="logo">
-      </div>
-      
-    </div>
-    <nav id="nav" class="nav">
-      <a id="nav-toggle" class="nav-toggle" aria-hidden="true"><i class="fas fa-bars" aria-label="切换导航栏"></i></a>
-      <ul id="menu" role="menubar" aria-hidden="false">
-        
-        <li role="menuitem"><a href="/" class="current">首页</a></li>
-        
-        <li role="menuitem"><a href="/archives/">归档</a></li>
-        
-        <li role="menuitem"><a href="/about/">关于</a></li>
-        
-      </ul>
-    </nav>
+<div class="card">
+  <h2>期中成绩查询</h2>
+  <div id="form-area">
+    <input id="nameInput" placeholder="请输入姓名">
+    <input id="codeInput" placeholder="请输入验证码">
+    <button onclick="checkScore()">查询</button>
   </div>
-</header>
 
-
-    <main id="main" class="main">
-      <div class="container">
-        <div class="main-container">
-          <div class="content">
-            
-
-<div id="index" class="index page">
-  
-  <article class="article post card" itemscope itemtype="http://schema.org/Article">
-    <div class="post-block">
-      <link itemprop="mainEntityOfPage" href="https://huang-lian.github.io./2018/10/11/LaTeX快速入门笔记/">
-      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <meta itemprop="name" content="JiangYian">
-        <meta itemprop="description" content="">
-        <meta itemprop="image" content="https://img3.doubanio.com/icon/ul160088405-4.jpg">
-      </span>
-      <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-        <meta itemprop="name" content="临江倚岸">
-      </span>
-    </div>
-    <header class="post-header">
-      <h1 class="post-title" itemprop="name headline">
-        <a class="post-title-link post-title-link-external" href="/2018/10/11/LaTeX快速入门笔记/" itemprop="url">LaTeX快速入门笔记</a>
-      </h1>
-      <div class="post-meta">
-        
-        <span class="post-date">
-          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2018-10-11T22:40:06+08:00">2018-10-11 22:40:06</time></span>
-        </span>
-        
-        
-        
-      </div>
-    </header>
-    <main class="post-main" itemprop="articleBody">
-      
-      <p>简单快速了解LaTeX 的笔记。介绍了LaTeX 的一些基本内容，包含作者遇到的一些问题的总结和资料推荐。<br>
-      
-    </main>
-    <footer class="post-footer">
-      
-    </footer>
-  </article>
-  
-  
-  
+  <div id="result-area" class="hidden">
+    <h3 id="studentName"></h3>
+    <table id="scoreTable">
+      <thead>
+        <tr>
+          <th>科目</th>
+          <th>成绩</th>
+          <th>校排名</th>
+          <th>班排名</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <button onclick="resetForm()">返回重新查询</button>
+  </div>
 </div>
 
-          </div>
-          
-          
-          
-<aside class="sidebar" id="sidebar" style="background: url(/images/background.png);">
-  
-  <div class="search">
-    <div class="form-group">
-      <i class="fas fa-search"></i><input type="search" id="search-input" name="q" results="0" placeholder="搜索" class="form-control"/>
-    </div>
-  </div>
-  <div class="search-result-box" id="search-result"></div>
-  
-  
-<div class="info sidebar-item" id="info">
-  
-  <img class="author-avatar" src="https://img3.doubanio.com/icon/ul160088405-4.jpg" alt="JiangYian">
-  
-  <h1 class="author-name">JiangYian</h1>
-  <h2 class="author-description"></h2>
-  <div class="site-count">
-    
-    <div class="archives-count">
-      <div class="site-count-title">归档</div>
-      <div><a href="/archives/">1</a></div>
-    </div>
-    
-    
-    
-  </div>
-  
-  <div class="rss">
-    <a class="rss-link button sidebar-item" href="/atom.xml"><i class="fas fa-rss"></i>RSS</a>
-  </div>
-  
-</div>
+<script>
+// 嵌入的数据
+const data = [
+  {
+    "name": "罗雅婕",
+    "code": "27125230010147",
+    "subjects": {
+      "总分": {
+        "score": 318.5,
+        "schoolRank": 47,
+        "classRank": 1
+      },
+      "语文": {
+        "score": 88.5,
+        "schoolRank": 35,
+        "classRank": 4
+      },
+      "数学": {
+        "score": 47,
+        "schoolRank": 24,
+        "classRank": 2
+      },
+      "英语": {
+        "score": 40.0,
+        "schoolRank": 117,
+        "classRank": 13
+      },
+      "政治": {
+        "score": 51,
+        "schoolRank": 119,
+        "classRank": 8
+      },
+      "历史": {
+        "score": 40,
+        "schoolRank": 174,
+        "classRank": 18
+      },
+      "地理": {
+        "score": 52,
+        "schoolRank": 62,
+        "classRank": 6
+      }
+    }
+  },
+  {
+    "name": "熊金宽",
+    "code": "27125230010126",
+    "subjects": {
+      "总分": {
+        "score": 310.5,
+        "schoolRank": 54,
+        "classRank": 2
+      },
+      "语文": {
+        "score": 85.0,
+        "schoolRank": 65,
+        "classRank": 5
+      },
+      "数学": {
+        "score": 51,
+        "schoolRank": 16,
+        "classRank": 1
+      },
+      "英语": {
+        "score": 43.5,
+        "schoolRank": 89,
+        "classRank": 7
+      },
+      "政治": {
+        "score": 53,
+        "schoolRank": 97,
+        "classRank": 6
+      },
+      "历史": {
+        "score": 42,
+        "schoolRank": 142,
+        "classRank": 15
+      },
+      "地理": {
+        "score": 36,
+        "schoolRank": 300,
+        "classRank": 34
+      }
+    }
+  },
+  {
+    "name": "欧阳济贤",
+    "code": "27125230010340",
+    "subjects": {
+      "总分": {
+        "score": 309.0,
+        "schoolRank": 56,
+        "classRank": 3
+      },
+      "语文": {
+        "score": 90.5,
+        "schoolRank": 21,
+        "classRank": 1
+      },
+      "数学": {
+        "score": 18,
+        "schoolRank": 271,
+        "classRank": 31
+      },
+      "英语": {
+        "score": 24.5,
+        "schoolRank": 325,
+        "classRank": 34
+      },
+      "政治": {
+        "score": 63,
+        "schoolRank": 34,
+        "classRank": 1
+      },
+      "历史": {
+        "score": 53,
+        "schoolRank": 30,
+        "classRank": 1
+      },
+      "地理": {
+        "score": 60,
+        "schoolRank": 18,
+        "classRank": 1
+      }
+    }
+  },
+  {
+    "name": "杨保婷",
+    "code": "27125230010232",
+    "subjects": {
+      "总分": {
+        "score": 306.5,
+        "schoolRank": 63,
+        "classRank": 4
+      },
+      "语文": {
+        "score": 74.5,
+        "schoolRank": 195,
+        "classRank": 17
+      },
+      "数学": {
+        "score": 29,
+        "schoolRank": 121,
+        "classRank": 11
+      },
+      "英语": {
+        "score": 50.0,
+        "schoolRank": 39,
+        "classRank": 2
+      },
+      "政治": {
+        "score": 58,
+        "schoolRank": 54,
+        "classRank": 2
+      },
+      "历史": {
+        "score": 50,
+        "schoolRank": 53,
+        "classRank": 3
+      },
+      "地理": {
+        "score": 45,
+        "schoolRank": 162,
+        "classRank": 17
+      }
+    }
+  },
+  {
+    "name": "杨正欣",
+    "code": "27125230010397",
+    "subjects": {
+      "总分": {
+        "score": 302.0,
+        "schoolRank": 73,
+        "classRank": 5
+      },
+      "语文": {
+        "score": 82.0,
+        "schoolRank": 101,
+        "classRank": 8
+      },
+      "数学": {
+        "score": 33,
+        "schoolRank": 78,
+        "classRank": 8
+      },
+      "英语": {
+        "score": 44.0,
+        "schoolRank": 85,
+        "classRank": 5
+      },
+      "政治": {
+        "score": 51,
+        "schoolRank": 119,
+        "classRank": 8
+      },
+      "历史": {
+        "score": 45,
+        "schoolRank": 105,
+        "classRank": 9
+      },
+      "地理": {
+        "score": 47,
+        "schoolRank": 128,
+        "classRank": 14
+      }
+    }
+  },
+  {
+    "name": "侯靖龙",
+    "code": "27125230010440",
+    "subjects": {
+      "总分": {
+        "score": 298.75,
+        "schoolRank": 82,
+        "classRank": 6
+      },
+      "语文": {
+        "score": 79.5,
+        "schoolRank": 124,
+        "classRank": 11
+      },
+      "数学": {
+        "score": 27,
+        "schoolRank": 141,
+        "classRank": 13
+      },
+      "英语": {
+        "score": 49.25,
+        "schoolRank": 44,
+        "classRank": 3
+      },
+      "政治": {
+        "score": 49,
+        "schoolRank": 145,
+        "classRank": 13
+      },
+      "历史": {
+        "score": 41,
+        "schoolRank": 158,
+        "classRank": 17
+      },
+      "地理": {
+        "score": 53,
+        "schoolRank": 53,
+        "classRank": 5
+      }
+    }
+  },
+  {
+    "name": "邓艳",
+    "code": "27125230010367",
+    "subjects": {
+      "总分": {
+        "score": 294.5,
+        "schoolRank": 91,
+        "classRank": 7
+      },
+      "语文": {
+        "score": 71.5,
+        "schoolRank": 241,
+        "classRank": 24
+      },
+      "数学": {
+        "score": 30,
+        "schoolRank": 108,
+        "classRank": 10
+      },
+      "英语": {
+        "score": 45.0,
+        "schoolRank": 77,
+        "classRank": 4
+      },
+      "政治": {
+        "score": 53,
+        "schoolRank": 97,
+        "classRank": 6
+      },
+      "历史": {
+        "score": 43,
+        "schoolRank": 128,
+        "classRank": 12
+      },
+      "地理": {
+        "score": 52,
+        "schoolRank": 62,
+        "classRank": 6
+      }
+    }
+  },
+  {
+    "name": "王传英",
+    "code": "27125230010267",
+    "subjects": {
+      "总分": {
+        "score": 291.5,
+        "schoolRank": 96,
+        "classRank": 8
+      },
+      "语文": {
+        "score": 75.0,
+        "schoolRank": 190,
+        "classRank": 15
+      },
+      "数学": {
+        "score": 41,
+        "schoolRank": 38,
+        "classRank": 4
+      },
+      "英语": {
+        "score": 35.5,
+        "schoolRank": 172,
+        "classRank": 18
+      },
+      "政治": {
+        "score": 42,
+        "schoolRank": 241,
+        "classRank": 23
+      },
+      "历史": {
+        "score": 46,
+        "schoolRank": 88,
+        "classRank": 7
+      },
+      "地理": {
+        "score": 52,
+        "schoolRank": 62,
+        "classRank": 6
+      }
+    }
+  },
+  {
+    "name": "陈国豪",
+    "code": "27125230010304",
+    "subjects": {
+      "总分": {
+        "score": 289.5,
+        "schoolRank": 100,
+        "classRank": 9
+      },
+      "语文": {
+        "score": 78.5,
+        "schoolRank": 137,
+        "classRank": 12
+      },
+      "数学": {
+        "score": 22,
+        "schoolRank": 202,
+        "classRank": 21
+      },
+      "英语": {
+        "score": 34.0,
+        "schoolRank": 184,
+        "classRank": 20
+      },
+      "政治": {
+        "score": 51,
+        "schoolRank": 119,
+        "classRank": 8
+      },
+      "历史": {
+        "score": 49,
+        "schoolRank": 63,
+        "classRank": 4
+      },
+      "地理": {
+        "score": 55,
+        "schoolRank": 38,
+        "classRank": 4
+      }
+    }
+  },
+  {
+    "name": "马丽艳",
+    "code": "27125230010483",
+    "subjects": {
+      "总分": {
+        "score": 288.5,
+        "schoolRank": 102,
+        "classRank": 10
+      },
+      "语文": {
+        "score": 78.0,
+        "schoolRank": 147,
+        "classRank": 13
+      },
+      "数学": {
+        "score": 43,
+        "schoolRank": 30,
+        "classRank": 3
+      },
+      "英语": {
+        "score": 33.5,
+        "schoolRank": 190,
+        "classRank": 21
+      },
+      "政治": {
+        "score": 48,
+        "schoolRank": 160,
+        "classRank": 14
+      },
+      "历史": {
+        "score": 43,
+        "schoolRank": 128,
+        "classRank": 12
+      },
+      "地理": {
+        "score": 43,
+        "schoolRank": 198,
+        "classRank": 20
+      }
+    }
+  },
+  {
+    "name": "张鑫品",
+    "code": "27125230010042",
+    "subjects": {
+      "总分": {
+        "score": 279.0,
+        "schoolRank": 119,
+        "classRank": 11
+      },
+      "语文": {
+        "score": 74.5,
+        "schoolRank": 195,
+        "classRank": 17
+      },
+      "数学": {
+        "score": 39,
+        "schoolRank": 51,
+        "classRank": 6
+      },
+      "英语": {
+        "score": 23.5,
+        "schoolRank": 338,
+        "classRank": 36
+      },
+      "政治": {
+        "score": 48,
+        "schoolRank": 160,
+        "classRank": 14
+      },
+      "历史": {
+        "score": 44,
+        "schoolRank": 118,
+        "classRank": 11
+      },
+      "地理": {
+        "score": 50,
+        "schoolRank": 82,
+        "classRank": 10
+      }
+    }
+  },
+  {
+    "name": "王金丽",
+    "code": "27125230010270",
+    "subjects": {
+      "总分": {
+        "score": 276.0,
+        "schoolRank": 131,
+        "classRank": 12
+      },
+      "语文": {
+        "score": 89.5,
+        "schoolRank": 28,
+        "classRank": 2
+      },
+      "数学": {
+        "score": 6,
+        "schoolRank": 383,
+        "classRank": 37
+      },
+      "英语": {
+        "score": 30.5,
+        "schoolRank": 236,
+        "classRank": 24
+      },
+      "政治": {
+        "score": 55,
+        "schoolRank": 73,
+        "classRank": 3
+      },
+      "历史": {
+        "score": 48,
+        "schoolRank": 74,
+        "classRank": 6
+      },
+      "地理": {
+        "score": 47,
+        "schoolRank": 128,
+        "classRank": 14
+      }
+    }
+  },
+  {
+    "name": "詹心怡",
+    "code": "27125230010262",
+    "subjects": {
+      "总分": {
+        "score": 272.0,
+        "schoolRank": 144,
+        "classRank": 13
+      },
+      "语文": {
+        "score": 89.5,
+        "schoolRank": 28,
+        "classRank": 2
+      },
+      "数学": {
+        "score": 25,
+        "schoolRank": 167,
+        "classRank": 16
+      },
+      "英语": {
+        "score": 51.5,
+        "schoolRank": 34,
+        "classRank": 1
+      },
+      "政治": {
+        "score": 31,
+        "schoolRank": 370,
+        "classRank": 38
+      },
+      "历史": {
+        "score": 34,
+        "schoolRank": 256,
+        "classRank": 24
+      },
+      "地理": {
+        "score": 41,
+        "schoolRank": 231,
+        "classRank": 25
+      }
+    }
+  },
+  {
+    "name": "杨丽芬",
+    "code": "27125230010707",
+    "subjects": {
+      "总分": {
+        "score": 271.0,
+        "schoolRank": 147,
+        "classRank": 14
+      },
+      "语文": {
+        "score": 80.0,
+        "schoolRank": 123,
+        "classRank": 10
+      },
+      "数学": {
+        "score": 19,
+        "schoolRank": 260,
+        "classRank": 27
+      },
+      "英语": {
+        "score": 30.0,
+        "schoolRank": 242,
+        "classRank": 26
+      },
+      "政治": {
+        "score": 50,
+        "schoolRank": 134,
+        "classRank": 11
+      },
+      "历史": {
+        "score": 51,
+        "schoolRank": 44,
+        "classRank": 2
+      },
+      "地理": {
+        "score": 41,
+        "schoolRank": 231,
+        "classRank": 25
+      }
+    }
+  },
+  {
+    "name": "高磊",
+    "code": "27125230010345",
+    "subjects": {
+      "总分": {
+        "score": 269.0,
+        "schoolRank": 157,
+        "classRank": 15
+      },
+      "语文": {
+        "score": 82.5,
+        "schoolRank": 97,
+        "classRank": 6
+      },
+      "数学": {
+        "score": 4,
+        "schoolRank": 388,
+        "classRank": 38
+      },
+      "英语": {
+        "score": 25.5,
+        "schoolRank": 306,
+        "classRank": 33
+      },
+      "政治": {
+        "score": 55,
+        "schoolRank": 73,
+        "classRank": 3
+      },
+      "历史": {
+        "score": 46,
+        "schoolRank": 88,
+        "classRank": 7
+      },
+      "地理": {
+        "score": 56,
+        "schoolRank": 36,
+        "classRank": 3
+      }
+    }
+  },
+  {
+    "name": "马玉兰",
+    "code": "27125230010481",
+    "subjects": {
+      "总分": {
+        "score": 267.5,
+        "schoolRank": 162,
+        "classRank": 16
+      },
+      "语文": {
+        "score": 77.5,
+        "schoolRank": 155,
+        "classRank": 14
+      },
+      "数学": {
+        "score": 20,
+        "schoolRank": 242,
+        "classRank": 25
+      },
+      "英语": {
+        "score": 44.0,
+        "schoolRank": 85,
+        "classRank": 5
+      },
+      "政治": {
+        "score": 47,
+        "schoolRank": 173,
+        "classRank": 16
+      },
+      "历史": {
+        "score": 45,
+        "schoolRank": 105,
+        "classRank": 9
+      },
+      "地理": {
+        "score": 34,
+        "schoolRank": 323,
+        "classRank": 37
+      }
+    }
+  },
+  {
+    "name": "普柯源",
+    "code": "27125230010798",
+    "subjects": {
+      "总分": {
+        "score": 262.25,
+        "schoolRank": 183,
+        "classRank": 17
+      },
+      "语文": {
+        "score": 74.0,
+        "schoolRank": 207,
+        "classRank": 22
+      },
+      "数学": {
+        "score": 22,
+        "schoolRank": 202,
+        "classRank": 21
+      },
+      "英语": {
+        "score": 30.25,
+        "schoolRank": 241,
+        "classRank": 25
+      },
+      "政治": {
+        "score": 40,
+        "schoolRank": 271,
+        "classRank": 28
+      },
+      "历史": {
+        "score": 37,
+        "schoolRank": 215,
+        "classRank": 20
+      },
+      "地理": {
+        "score": 59,
+        "schoolRank": 22,
+        "classRank": 2
+      }
+    }
+  },
+  {
+    "name": "王娅娟",
+    "code": "27125230010468",
+    "subjects": {
+      "总分": {
+        "score": 256.0,
+        "schoolRank": 215,
+        "classRank": 18
+      },
+      "语文": {
+        "score": 69.5,
+        "schoolRank": 273,
+        "classRank": 27
+      },
+      "数学": {
+        "score": 20,
+        "schoolRank": 242,
+        "classRank": 25
+      },
+      "英语": {
+        "score": 43.5,
+        "schoolRank": 89,
+        "classRank": 7
+      },
+      "政治": {
+        "score": 46,
+        "schoolRank": 190,
+        "classRank": 18
+      },
+      "历史": {
+        "score": 33,
+        "schoolRank": 266,
+        "classRank": 25
+      },
+      "地理": {
+        "score": 44,
+        "schoolRank": 173,
+        "classRank": 18
+      }
+    }
+  },
+  {
+    "name": "侯贵仙",
+    "code": "27125230010337",
+    "subjects": {
+      "总分": {
+        "score": 253.0,
+        "schoolRank": 224,
+        "classRank": 19
+      },
+      "语文": {
+        "score": 75.0,
+        "schoolRank": 190,
+        "classRank": 15
+      },
+      "数学": {
+        "score": 17,
+        "schoolRank": 282,
+        "classRank": 32
+      },
+      "英语": {
+        "score": 38.0,
+        "schoolRank": 145,
+        "classRank": 15
+      },
+      "政治": {
+        "score": 47,
+        "schoolRank": 173,
+        "classRank": 16
+      },
+      "历史": {
+        "score": 37,
+        "schoolRank": 215,
+        "classRank": 20
+      },
+      "地理": {
+        "score": 39,
+        "schoolRank": 264,
+        "classRank": 30
+      }
+    }
+  },
+  {
+    "name": "熊艳萍",
+    "code": "27125230010257",
+    "subjects": {
+      "总分": {
+        "score": 251.0,
+        "schoolRank": 231,
+        "classRank": 20
+      },
+      "语文": {
+        "score": 74.5,
+        "schoolRank": 195,
+        "classRank": 17
+      },
+      "数学": {
+        "score": 32,
+        "schoolRank": 89,
+        "classRank": 9
+      },
+      "英语": {
+        "score": 24.5,
+        "schoolRank": 325,
+        "classRank": 34
+      },
+      "政治": {
+        "score": 40,
+        "schoolRank": 271,
+        "classRank": 28
+      },
+      "历史": {
+        "score": 31,
+        "schoolRank": 299,
+        "classRank": 29
+      },
+      "地理": {
+        "score": 49,
+        "schoolRank": 99,
+        "classRank": 12
+      }
+    }
+  },
+  {
+    "name": "赵恒",
+    "code": "27125230010269",
+    "subjects": {
+      "总分": {
+        "score": 249.5,
+        "schoolRank": 234,
+        "classRank": 21
+      },
+      "语文": {
+        "score": 74.0,
+        "schoolRank": 207,
+        "classRank": 22
+      },
+      "数学": {
+        "score": 17,
+        "schoolRank": 282,
+        "classRank": 32
+      },
+      "英语": {
+        "score": 42.5,
+        "schoolRank": 94,
+        "classRank": 9
+      },
+      "政治": {
+        "score": 44,
+        "schoolRank": 216,
+        "classRank": 21
+      },
+      "历史": {
+        "score": 29,
+        "schoolRank": 324,
+        "classRank": 32
+      },
+      "地理": {
+        "score": 43,
+        "schoolRank": 198,
+        "classRank": 20
+      }
+    }
+  },
+  {
+    "name": "杨卓衡",
+    "code": "27125230010629",
+    "subjects": {
+      "总分": {
+        "score": 247.0,
+        "schoolRank": 238,
+        "classRank": 22
+      },
+      "语文": {
+        "score": 69.5,
+        "schoolRank": 273,
+        "classRank": 27
+      },
+      "数学": {
+        "score": 24,
+        "schoolRank": 181,
+        "classRank": 17
+      },
+      "英语": {
+        "score": 40.5,
+        "schoolRank": 113,
+        "classRank": 11
+      },
+      "政治": {
+        "score": 41,
+        "schoolRank": 259,
+        "classRank": 25
+      },
+      "历史": {
+        "score": 32,
+        "schoolRank": 284,
+        "classRank": 26
+      },
+      "地理": {
+        "score": 40,
+        "schoolRank": 245,
+        "classRank": 27
+      }
+    }
+  },
+  {
+    "name": "王成",
+    "code": "27125230010557",
+    "subjects": {
+      "总分": {
+        "score": 245.5,
+        "schoolRank": 243,
+        "classRank": 23
+      },
+      "语文": {
+        "score": 82.5,
+        "schoolRank": 97,
+        "classRank": 6
+      },
+      "数学": {
+        "score": 19,
+        "schoolRank": 260,
+        "classRank": 27
+      },
+      "英语": {
+        "score": 29.0,
+        "schoolRank": 254,
+        "classRank": 27
+      },
+      "政治": {
+        "score": 34,
+        "schoolRank": 335,
+        "classRank": 32
+      },
+      "历史": {
+        "score": 43,
+        "schoolRank": 128,
+        "classRank": 12
+      },
+      "地理": {
+        "score": 38,
+        "schoolRank": 280,
+        "classRank": 31
+      }
+    }
+  },
+  {
+    "name": "张玉明",
+    "code": "27125230010568",
+    "subjects": {
+      "总分": {
+        "score": 245.5,
+        "schoolRank": 243,
+        "classRank": 23
+      },
+      "语文": {
+        "score": 80.5,
+        "schoolRank": 120,
+        "classRank": 9
+      },
+      "数学": {
+        "score": 19,
+        "schoolRank": 260,
+        "classRank": 27
+      },
+      "英语": {
+        "score": 35.0,
+        "schoolRank": 177,
+        "classRank": 19
+      },
+      "政治": {
+        "score": 39,
+        "schoolRank": 287,
+        "classRank": 30
+      },
+      "历史": {
+        "score": 32,
+        "schoolRank": 284,
+        "classRank": 26
+      },
+      "地理": {
+        "score": 40,
+        "schoolRank": 245,
+        "classRank": 27
+      }
+    }
+  },
+  {
+    "name": "刘华然",
+    "code": "27125230010528",
+    "subjects": {
+      "总分": {
+        "score": 244.5,
+        "schoolRank": 249,
+        "classRank": 25
+      },
+      "语文": {
+        "score": 66.0,
+        "schoolRank": 318,
+        "classRank": 31
+      },
+      "数学": {
+        "score": 22,
+        "schoolRank": 202,
+        "classRank": 21
+      },
+      "英语": {
+        "score": 33.5,
+        "schoolRank": 190,
+        "classRank": 21
+      },
+      "政治": {
+        "score": 50,
+        "schoolRank": 134,
+        "classRank": 11
+      },
+      "历史": {
+        "score": 30,
+        "schoolRank": 315,
+        "classRank": 30
+      },
+      "地理": {
+        "score": 43,
+        "schoolRank": 198,
+        "classRank": 20
+      }
+    }
+  },
+  {
+    "name": "何自强",
+    "code": "27125230010633",
+    "subjects": {
+      "总分": {
+        "score": 243.0,
+        "schoolRank": 251,
+        "classRank": 26
+      },
+      "语文": {
+        "score": 58.5,
+        "schoolRank": 363,
+        "classRank": 37
+      },
+      "数学": {
+        "score": 26,
+        "schoolRank": 158,
+        "classRank": 15
+      },
+      "英语": {
+        "score": 37.5,
+        "schoolRank": 148,
+        "classRank": 16
+      },
+      "政治": {
+        "score": 46,
+        "schoolRank": 190,
+        "classRank": 18
+      },
+      "历史": {
+        "score": 37,
+        "schoolRank": 215,
+        "classRank": 20
+      },
+      "地理": {
+        "score": 38,
+        "schoolRank": 280,
+        "classRank": 31
+      }
+    }
+  },
+  {
+    "name": "陶金丽",
+    "code": "27125230010516",
+    "subjects": {
+      "总分": {
+        "score": 242.0,
+        "schoolRank": 257,
+        "classRank": 27
+      },
+      "语文": {
+        "score": 51.5,
+        "schoolRank": 377,
+        "classRank": 38
+      },
+      "数学": {
+        "score": 17,
+        "schoolRank": 282,
+        "classRank": 32
+      },
+      "英语": {
+        "score": 39.5,
+        "schoolRank": 123,
+        "classRank": 14
+      },
+      "政治": {
+        "score": 55,
+        "schoolRank": 73,
+        "classRank": 3
+      },
+      "历史": {
+        "score": 49,
+        "schoolRank": 63,
+        "classRank": 4
+      },
+      "地理": {
+        "score": 30,
+        "schoolRank": 358,
+        "classRank": 38
+      }
+    }
+  },
+  {
+    "name": "马自祥",
+    "code": "27125230010450",
+    "subjects": {
+      "总分": {
+        "score": 238.0,
+        "schoolRank": 277,
+        "classRank": 28
+      },
+      "语文": {
+        "score": 74.5,
+        "schoolRank": 195,
+        "classRank": 17
+      },
+      "数学": {
+        "score": 12,
+        "schoolRank": 345,
+        "classRank": 36
+      },
+      "英语": {
+        "score": 31.5,
+        "schoolRank": 214,
+        "classRank": 23
+      },
+      "政治": {
+        "score": 42,
+        "schoolRank": 241,
+        "classRank": 23
+      },
+      "历史": {
+        "score": 29,
+        "schoolRank": 324,
+        "classRank": 32
+      },
+      "地理": {
+        "score": 49,
+        "schoolRank": 99,
+        "classRank": 12
+      }
+    }
+  },
+  {
+    "name": "陶富林",
+    "code": "27125230010324",
+    "subjects": {
+      "总分": {
+        "score": 236.0,
+        "schoolRank": 281,
+        "classRank": 29
+      },
+      "语文": {
+        "score": 71.0,
+        "schoolRank": 249,
+        "classRank": 25
+      },
+      "数学": {
+        "score": 36,
+        "schoolRank": 63,
+        "classRank": 7
+      },
+      "英语": {
+        "score": 26.0,
+        "schoolRank": 298,
+        "classRank": 32
+      },
+      "政治": {
+        "score": 35,
+        "schoolRank": 319,
+        "classRank": 31
+      },
+      "历史": {
+        "score": 32,
+        "schoolRank": 284,
+        "classRank": 26
+      },
+      "地理": {
+        "score": 36,
+        "schoolRank": 300,
+        "classRank": 34
+      }
+    }
+  },
+  {
+    "name": "黄金戈",
+    "code": "27125230010799",
+    "subjects": {
+      "总分": {
+        "score": 232.25,
+        "schoolRank": 293,
+        "classRank": 30
+      },
+      "语文": {
+        "score": 65.5,
+        "schoolRank": 322,
+        "classRank": 32
+      },
+      "数学": {
+        "score": 23,
+        "schoolRank": 192,
+        "classRank": 19
+      },
+      "英语": {
+        "score": 35.75,
+        "schoolRank": 169,
+        "classRank": 17
+      },
+      "政治": {
+        "score": 33,
+        "schoolRank": 345,
+        "classRank": 34
+      },
+      "历史": {
+        "score": 39,
+        "schoolRank": 195,
+        "classRank": 19
+      },
+      "地理": {
+        "score": 36,
+        "schoolRank": 300,
+        "classRank": 34
+      }
+    }
+  },
+  {
+    "name": "杨丁广",
+    "code": "27125230010744",
+    "subjects": {
+      "总分": {
+        "score": 230.0,
+        "schoolRank": 302,
+        "classRank": 31
+      },
+      "语文": {
+        "score": 59.5,
+        "schoolRank": 359,
+        "classRank": 35
+      },
+      "数学": {
+        "score": 41,
+        "schoolRank": 38,
+        "classRank": 4
+      },
+      "英语": {
+        "score": 27.5,
+        "schoolRank": 275,
+        "classRank": 28
+      },
+      "政治": {
+        "score": 33,
+        "schoolRank": 345,
+        "classRank": 34
+      },
+      "历史": {
+        "score": 17,
+        "schoolRank": 386,
+        "classRank": 39
+      },
+      "地理": {
+        "score": 52,
+        "schoolRank": 62,
+        "classRank": 6
+      }
+    }
+  },
+  {
+    "name": "唐明发",
+    "code": "27125230010682",
+    "subjects": {
+      "总分": {
+        "score": 228.0,
+        "schoolRank": 307,
+        "classRank": 32
+      },
+      "语文": {
+        "score": 45.5,
+        "schoolRank": 389,
+        "classRank": 39
+      },
+      "数学": {
+        "score": 19,
+        "schoolRank": 260,
+        "classRank": 27
+      },
+      "英语": {
+        "score": 42.5,
+        "schoolRank": 94,
+        "classRank": 9
+      },
+      "政治": {
+        "score": 45,
+        "schoolRank": 204,
+        "classRank": 20
+      },
+      "历史": {
+        "score": 29,
+        "schoolRank": 324,
+        "classRank": 32
+      },
+      "地理": {
+        "score": 47,
+        "schoolRank": 128,
+        "classRank": 14
+      }
+    }
+  },
+  {
+    "name": "陶梅",
+    "code": "27125230010690",
+    "subjects": {
+      "总分": {
+        "score": 228.0,
+        "schoolRank": 307,
+        "classRank": 32
+      },
+      "语文": {
+        "score": 69.5,
+        "schoolRank": 273,
+        "classRank": 27
+      },
+      "数学": {
+        "score": 15,
+        "schoolRank": 312,
+        "classRank": 35
+      },
+      "英语": {
+        "score": 22.5,
+        "schoolRank": 348,
+        "classRank": 37
+      },
+      "政治": {
+        "score": 41,
+        "schoolRank": 259,
+        "classRank": 25
+      },
+      "历史": {
+        "score": 42,
+        "schoolRank": 142,
+        "classRank": 15
+      },
+      "地理": {
+        "score": 38,
+        "schoolRank": 280,
+        "classRank": 31
+      }
+    }
+  },
+  {
+    "name": "梁诗涵",
+    "code": "27125230010747",
+    "subjects": {
+      "总分": {
+        "score": 227.5,
+        "schoolRank": 309,
+        "classRank": 34
+      },
+      "语文": {
+        "score": 63.0,
+        "schoolRank": 337,
+        "classRank": 33
+      },
+      "数学": {
+        "score": 2,
+        "schoolRank": 391,
+        "classRank": 39
+      },
+      "英语": {
+        "score": 40.5,
+        "schoolRank": 113,
+        "classRank": 11
+      },
+      "政治": {
+        "score": 44,
+        "schoolRank": 216,
+        "classRank": 21
+      },
+      "历史": {
+        "score": 36,
+        "schoolRank": 232,
+        "classRank": 23
+      },
+      "地理": {
+        "score": 42,
+        "schoolRank": 216,
+        "classRank": 23
+      }
+    }
+  },
+  {
+    "name": "杨成国",
+    "code": "27125230010555",
+    "subjects": {
+      "总分": {
+        "score": 225.25,
+        "schoolRank": 316,
+        "classRank": 35
+      },
+      "语文": {
+        "score": 67.5,
+        "schoolRank": 302,
+        "classRank": 30
+      },
+      "数学": {
+        "score": 27,
+        "schoolRank": 141,
+        "classRank": 13
+      },
+      "英语": {
+        "score": 26.75,
+        "schoolRank": 289,
+        "classRank": 30
+      },
+      "政治": {
+        "score": 28,
+        "schoolRank": 383,
+        "classRank": 39
+      },
+      "历史": {
+        "score": 26,
+        "schoolRank": 348,
+        "classRank": 35
+      },
+      "地理": {
+        "score": 50,
+        "schoolRank": 82,
+        "classRank": 10
+      }
+    }
+  },
+  {
+    "name": "李嘉佳",
+    "code": "27125230010779",
+    "subjects": {
+      "总分": {
+        "score": 224.0,
+        "schoolRank": 320,
+        "classRank": 36
+      },
+      "语文": {
+        "score": 74.5,
+        "schoolRank": 195,
+        "classRank": 17
+      },
+      "数学": {
+        "score": 23,
+        "schoolRank": 192,
+        "classRank": 19
+      },
+      "英语": {
+        "score": 27.5,
+        "schoolRank": 275,
+        "classRank": 28
+      },
+      "政治": {
+        "score": 34,
+        "schoolRank": 335,
+        "classRank": 32
+      },
+      "历史": {
+        "score": 25,
+        "schoolRank": 356,
+        "classRank": 36
+      },
+      "地理": {
+        "score": 40,
+        "schoolRank": 245,
+        "classRank": 27
+      }
+    }
+  },
+  {
+    "name": "吴光祥",
+    "code": "27125230010378",
+    "subjects": {
+      "总分": {
+        "score": 214.5,
+        "schoolRank": 347,
+        "classRank": 37
+      },
+      "语文": {
+        "score": 70.0,
+        "schoolRank": 265,
+        "classRank": 26
+      },
+      "数学": {
+        "score": 24,
+        "schoolRank": 181,
+        "classRank": 17
+      },
+      "英语": {
+        "score": 26.5,
+        "schoolRank": 292,
+        "classRank": 31
+      },
+      "政治": {
+        "score": 32,
+        "schoolRank": 361,
+        "classRank": 36
+      },
+      "历史": {
+        "score": 20,
+        "schoolRank": 380,
+        "classRank": 38
+      },
+      "地理": {
+        "score": 42,
+        "schoolRank": 216,
+        "classRank": 23
+      }
+    }
+  },
+  {
+    "name": "杨媛",
+    "code": "27125230010669",
+    "subjects": {
+      "总分": {
+        "score": 211.0,
+        "schoolRank": 354,
+        "classRank": 38
+      },
+      "语文": {
+        "score": 59.0,
+        "schoolRank": 361,
+        "classRank": 36
+      },
+      "数学": {
+        "score": 29,
+        "schoolRank": 121,
+        "classRank": 11
+      },
+      "英语": {
+        "score": 22.0,
+        "schoolRank": 354,
+        "classRank": 38
+      },
+      "政治": {
+        "score": 41,
+        "schoolRank": 259,
+        "classRank": 25
+      },
+      "历史": {
+        "score": 30,
+        "schoolRank": 315,
+        "classRank": 30
+      },
+      "地理": {
+        "score": 30,
+        "schoolRank": 358,
+        "classRank": 38
+      }
+    }
+  },
+  {
+    "name": "韦怡潇",
+    "code": "27125230010452",
+    "subjects": {
+      "总分": {
+        "score": 201.0,
+        "schoolRank": 368,
+        "classRank": 39
+      },
+      "语文": {
+        "score": 63.0,
+        "schoolRank": 337,
+        "classRank": 33
+      },
+      "数学": {
+        "score": 22,
+        "schoolRank": 202,
+        "classRank": 21
+      },
+      "英语": {
+        "score": 15.0,
+        "schoolRank": 389,
+        "classRank": 39
+      },
+      "政治": {
+        "score": 32,
+        "schoolRank": 361,
+        "classRank": 36
+      },
+      "历史": {
+        "score": 25,
+        "schoolRank": 356,
+        "classRank": 36
+      },
+      "地理": {
+        "score": 44,
+        "schoolRank": 173,
+        "classRank": 18
+      }
+    }
+  }
+];
 
+// 查询逻辑
+function checkScore() {
+  const name = document.getElementById("nameInput").value.trim();
+  const code = document.getElementById("codeInput").value.trim();
+  const student = data.find(d => d.name === name && d.code === code);
 
-  <div class="sidebar-sticky">
-    
-    
-    
-  </div>
-</aside>
+  if (!student) {
+    alert("查无此人，请检查姓名和验证码。");
+    return;
+  }
 
+  document.getElementById("form-area").classList.add("hidden");
+  document.getElementById("result-area").classList.remove("hidden");
+  document.getElementById("studentName").innerText = student.name + " 的成绩";
 
-          
-        </div>
-      </div>
-    </main>
-    
-<footer id="footer" class="footer" style="background: #33363b;">
-  <div class="container">
-    <div class="back-to-top">
-      <button id="back-to-top"><i class="fas fa-angle-double-up" aria-label="回到顶部"></i></button>
-    </div>
-    <div class="footer-container">
-      <div class="footer-left">
-        <div class="copyright">
-          <span class="author">JiangYian</span><span class="year"><i class="far fa-copyright"></i>2018</span>
-        </div>
-        
-      </div>
-      <div class="footer-right">
-        <div class="custom-info">
-          
-          托管于<i class="fab fa-github-alt"></i><a href="https://pages.github.com/" target="_blank">GitHub Pages</a>
-          
-        </div>
-        <div class="powered-by">
-          由 <a href="https://hexo.io/" target="_blank">Hexo</a> 强力驱动 | 主题 <a href="https://github.com/AlynxZhou/hexo-theme-aria/" target="_blank">ARIA</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
+  const tbody = document.querySelector("#scoreTable tbody");
+  tbody.innerHTML = ""; // 清空表格内容
 
+  for (const subject in student.subjects) {
+    const { score, schoolRank, classRank } = student.subjects[subject];
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td>${subject}</td>
+      <td>${score}</td>
+      <td>${schoolRank}</td>
+      <td>${classRank}</td>
+    `;
+    tbody.appendChild(tr);
+  }
+}
 
-  </body>
+function resetForm() {
+  document.getElementById("form-area").classList.remove("hidden");
+  document.getElementById("result-area").classList.add("hidden");
+  document.getElementById("nameInput").value = "";
+  document.getElementById("codeInput").value = "";
+}
+</script>
+</body>
 </html>
